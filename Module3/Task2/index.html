@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Examination System</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        .student {
+            background-color: lightyellow;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 250px;
+        }
+
+        .question {
+            background-color: lightcyan;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: lightgreen;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>ONLINE EXAMINATION SYSTEM</h1>
+
+        <div class="student">
+            <h2>Student Details</h2>
+
+            <label>Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter your name">
+            <br><br>
+
+            <label>Register Number:</label>
+            <input type="text" id="registerNo" placeholder="Enter register number">
+        </div>
+
+        <h2>Online Examination</h2>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <p><b>1. What does HTML stand for?</b></p>
+
+            <input type="radio" name="q1" value="correct">
+            A. Hyper Text Markup Language<br>
+
+            <input type="radio" name="q1" value="wrong">
+            B. High Text Machine Language<br>
+
+            <input type="radio" name="q1" value="wrong">
+            C. Hyperlink Text Management Language<br>
+
+            <input type="radio" name="q1" value="wrong">
+            D. Home Tool Markup Language
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p><b>2. Which language is used to make a webpage interactive?</b></p>
+
+            <input type="radio" name="q2" value="wrong">
+            A. HTML<br>
+
+            <input type="radio" name="q2" value="wrong">
+            B. CSS<br>
+
+            <input type="radio" name="q2" value="correct">
+            C. JavaScript<br>
+
+            <input type="radio" name="q2" value="wrong">
+            D. SQL
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p><b>3. Which symbol is used for an ID selector in CSS?</b></p>
+
+            <input type="radio" name="q3" value="wrong">
+            A. .<br>
+
+            <input type="radio" name="q3" value="correct">
+            B. #<br>
+
+            <input type="radio" name="q3" value="wrong">
+            C. *<br>
+
+            <input type="radio" name="q3" value="wrong">
+            D. @
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p><b>4. Which tag is used to create a paragraph in HTML?</b></p>
+
+            <input type="radio" name="q4" value="correct">
+            A. &lt;p&gt;<br>
+
+            <input type="radio" name="q4" value="wrong">
+            B. &lt;h1&gt;<br>
+
+            <input type="radio" name="q4" value="wrong">
+            C. &lt;br&gt;<br>
+
+            <input type="radio" name="q4" value="wrong">
+            D. &lt;para&gt;
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p><b>5. Which language is used to style a webpage?</b></p>
+
+            <input type="radio" name="q5" value="wrong">
+            A. HTML<br>
+
+            <input type="radio" name="q5" value="correct">
+            B. CSS<br>
+
+            <input type="radio" name="q5" value="wrong">
+            C. Java<br>
+
+            <input type="radio" name="q5" value="wrong">
+            D. Python
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p><b>6. Which tag is used to create a hyperlink?</b></p>
+
+            <input type="radio" name="q6" value="wrong">
+            A. &lt;link&gt;<br>
+
+            <input type="radio" name="q6" value="correct">
+            B. &lt;a&gt;<br>
+
+            <input type="radio" name="q6" value="wrong">
+            C. &lt;href&gt;<br>
+
+            <input type="radio" name="q6" value="wrong">
+            D. &lt;url&gt;
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p><b>7. Which keyword is used to declare a variable in JavaScript?</b></p>
+
+            <input type="radio" name="q7" value="wrong">
+            A. integer<br>
+
+            <input type="radio" name="q7" value="correct">
+            B. let<br>
+
+            <input type="radio" name="q7" value="wrong">
+            C. string<br>
+
+            <input type="radio" name="q7" value="wrong">
+            D. define
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p><b>8. Which tag is used to insert an image?</b></p>
+
+            <input type="radio" name="q8" value="correct">
+            A. &lt;img&gt;<br>
+
+            <input type="radio" name="q8" value="wrong">
+            B. &lt;image&gt;<br>
+
+            <input type="radio" name="q8" value="wrong">
+            C. &lt;picture&gt;<br>
+
+            <input type="radio" name="q8" value="wrong">
+            D. &lt;src&gt;
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p><b>9. Which HTML tag is used to create a button?</b></p>
+
+            <input type="radio" name="q9" value="wrong">
+            A. &lt;click&gt;<br>
+
+            <input type="radio" name="q9" value="correct">
+            B. &lt;button&gt;<br>
+
+            <input type="radio" name="q9" value="wrong">
+            C. &lt;btn&gt;<br>
+
+            <input type="radio" name="q9" value="wrong">
+            D. &lt;inputbutton&gt;
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p><b>10. Which technology is used to store data in a web application?</b></p>
+
+            <input type="radio" name="q10" value="wrong">
+            A. Database<br>
+
+            <input type="radio" name="q10" value="correct">
+            B. Both A and C<br>
+
+            <input type="radio" name="q10" value="wrong">
+            C. SQL<br>
+
+            <input type="radio" name="q10" value="wrong">
+            D. None
+        </div>
+
+        <br>
+
+        <center>
+            <button onclick="submitExam()">SUBMIT EXAM</button>
+        </center>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+
+        function submitExam() {
+
+            var name = document.getElementById("studentName").value;
+            var regno = document.getElementById("registerNo").value;
+
+            if (name == "" || regno == "") {
+                alert("Please enter Student Name and Register Number");
+                return;
+            }
+
+            var score = 0;
+
+            for (var i = 1; i <= 10; i++) {
+
+                var answer = document.querySelector(
+                    'input[name="q' + i + '"]:checked'
+                );
+
+                if (answer && answer.value == "correct") {
+                    score++;
+                }
+            }
+
+            var percentage = (score / 10) * 100;
+
+            document.getElementById("result").innerHTML =
+                "<b>EXAM RESULT</b><br><br>" +
+                "Student Name: " + name + "<br>" +
+                "Register Number: " + regno + "<br>" +
+                "Total Questions: 10<br>" +
+                "Correct Answers: " + score + "<br>" +
+                "Wrong Answers: " + (10 - score) + "<br>" +
+                "Marks: " + score + " / 10<br>" +
+                "Percentage: " + percentage + "%";
+        }
+
+    </script>
+
+</body>
+
+</html>
